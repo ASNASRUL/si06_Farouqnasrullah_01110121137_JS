@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Soal 4-image picker</title>
+</head>
+<body>
+    <h1>"Image Picker"</h1>
+    <select id="image-select" onchange="Image()">
+    <option disabled selected>Pilih Gambar</option><br>
+    <option value="gambar1">gambar1</option>
+    <option value="gambar2">gambar2</option>
+    <option value="gambar3">gambar3</option>
+    <option value="gambar4">gambar4</option>
+    <option value="gambar5">gambar5</option>
+    <!-- <option value="gambar6">gambar6</option>
+    <option value="gambar7">gambar7</option>
+    <option value="gambar8">gambar8</option> -->
+    </select>
+    <div id="pick"></div>
+
+    <script>
+        function Image() {
+            var x = document.getElementById("image-select").value;
+
+            if (x == "gambar1") {
+                gambar1 = document.getElementById("pick").innerHTML = '<img src="image/images 1.jpg">'
+                window.alert("ini gambar Tirex"  );
+            }
+            if (x == "gambar2") {
+                gambar2 = document.getElementById("pick").innerHTML = '<img  src="image/images 2.jfif">'
+                window.alert("ini gambar Kuda laut ");
+            }
+            if (x == "gambar3") {
+                gambar3 = document.getElementById("pick").innerHTML = '<img src="image/images 3.jfif">'
+                window.alert("ini gambar Indominus rex ");
+            }
+            if (x == "gambar4") {
+                gambar4 = document.getElementById("pick").innerHTML = '<img  src="image/images 4.jpg">'
+                window.alert("ini gambar Petrosaurus ");
+            }
+            if (x == "gambar5") {
+                gambar5 = document.getElementById("pick").innerHTML = '<img src="image/images 5.jfif">'
+                window.alert("ini gambar Megaladon");
+            }
+            // if (x == "gambar6") {
+            //     gambar6 = document.getElementById("pick").innerHTML = '<img src="image/images 6.jpg">'
+            //     window.alert("ini gambar Anoa ");
+            // }
+            // if (x == "gambar7") {
+            //     gambar7 = document.getElementById("pick").innerHTML = '<img  src="image/images 7.jpg">'
+            //     window.alert("ini gambar Buaya purba ");
+            // }
+            // if (x == "gambar8") {
+            //     gambar8 = document.getElementById("pick").innerHTML = '<img src="image/images 8.jpg">'
+            //     window.alert("ini gambar sugar glider ");
+            // }
+        }
+    </script>
+</body>
+</html>
